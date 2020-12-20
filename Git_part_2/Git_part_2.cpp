@@ -3,11 +3,12 @@
 #include <clocale>
 #include "MyAdd.h"
 #include "MyMult.h"
+#include "MySub.h"
 
 using namespace std;
 
-double request();
-
+double request(char);
+double request(int);
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -23,7 +24,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		case '+':
 		{
 					system("cls");
-					cout << std::fixed << MyAdd(request(),request()) << endl;
+					cout << std::fixed << MyAdd(request('a'), request(1)) << endl;
 					system("pause");
 					system("cls");
 		}
@@ -32,14 +33,16 @@ int _tmain(int argc, _TCHAR* argv[])
 		case '-':
 		{
 					system("cls");
-					cout << "Функция вычитания в разработке" << endl;
+					cout << std::fixed << MySub(request('a'), request(1)) << endl;
+					system("pause");
+					system("cls");
 		}
 			break;
 
 		case '*':
 		{
 					system("cls");
-					cout << std::fixed << MyMult(request(), request()) << endl;
+					cout << std::fixed << MyMult(request('a'), request(1)) << endl;
 					system("pause");
 					system("cls");
 		}
@@ -67,10 +70,20 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 
-double request()
+
+//Внимание!!! Костыли и ненужные перегрузы
+double request(int a)
 {
 	double num;
-	cout << "Введите число: ";
+	cout << "Введите первое число: ";
+	cin >> num;
+	return(num);
+}
+
+double request(char a)
+{
+	double num;
+	cout << "Введите второе число: ";
 	cin >> num;
 	return(num);
 }
