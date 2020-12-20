@@ -33,6 +33,9 @@
     <ClInclude Include="MySub.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MyDiv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -48,6 +51,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MySub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDiv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

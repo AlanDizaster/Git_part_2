@@ -4,6 +4,7 @@
 #include "MyAdd.h"
 #include "MyMult.h"
 #include "MySub.h"
+#include "MyDiv.h"
 
 using namespace std;
 
@@ -51,7 +52,9 @@ int _tmain(int argc, _TCHAR* argv[])
 		case '/':
 		{
 					system("cls");
-					cout << "Функция деления в разработке" << endl;
+					cout << std::fixed << MyDiv(request('a'), request(1)) << endl;
+					system("pause");
+					system("cls");
 
 		}
 			break;
