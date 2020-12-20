@@ -1,10 +1,11 @@
-// Git_part_2.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <iostream>
 #include <clocale>
+#include "MyAdd.h"
 using namespace std;
+
+double request();
+
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -20,7 +21,9 @@ int _tmain(int argc, _TCHAR* argv[])
 		case '+':
 		{
 					system("cls");
-					cout << "Функция сложения в разработке" << endl;
+					cout << MyAdd(request(),request()) << endl;
+					system("pause");
+					system("cls");
 		}
 			break;
 
@@ -60,3 +63,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 
+double request()
+{
+	double num;
+	cout << "Введите первое число: ";
+	cin >> num;
+	return(num);
+}
