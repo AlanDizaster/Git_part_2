@@ -2,6 +2,8 @@
 #include <iostream>
 #include <clocale>
 #include "MyAdd.h"
+#include "MyMult.h"
+
 using namespace std;
 
 double request();
@@ -37,7 +39,9 @@ int _tmain(int argc, _TCHAR* argv[])
 		case '*':
 		{
 					system("cls");
-					cout << "Функция умножения в разработке" << endl;
+					cout << std::fixed << MyMult(request(), request()) << endl;
+					system("pause");
+					system("cls");
 		}
 			break;
 
