@@ -47,5 +47,8 @@
     <ClCompile Include="MyMult.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MySub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
