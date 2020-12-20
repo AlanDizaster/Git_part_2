@@ -21,7 +21,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		case '+':
 		{
 					system("cls");
-					cout << MyAdd(request(),request()) << endl;
+					cout << std::fixed << MyAdd(request(),request()) << endl;
 					system("pause");
 					system("cls");
 		}
