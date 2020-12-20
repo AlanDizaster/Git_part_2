@@ -66,7 +66,7 @@ int _tmain(int argc, _TCHAR* argv[])
 double request()
 {
 	double num;
-	cout << "¬ведите первое число: ";
+	cout << "¬ведите число: ";
 	cin >> num;
 	return(num);
 }
