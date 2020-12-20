@@ -9,6 +9,8 @@
 
 #include <stdio.h>
 #include <tchar.h>
+#include "MyAdd.h"
+#include "MyMult.h"
 
 
 
